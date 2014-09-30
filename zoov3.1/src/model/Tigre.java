@@ -12,8 +12,8 @@ public class Tigre extends Animal {
 	}
 
 	public Tigre(String nomAbrege, Date dateNaiss, String sexe, int taille,
-			double poids, double coefficient) {
-		super(nomAbrege, dateNaiss, sexe, taille, poids,coefficient);
+			double poids, double coefficient,Comportement comportement) {
+		super(nomAbrege, dateNaiss, sexe, taille, poids,coefficient,comportement);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -27,9 +27,8 @@ public class Tigre extends Animal {
 		CalculateurAge ca = CalculateurAge.getInstance();
 		return (ca.calculer(this.getDateNaiss())*1.2)*12;
 	}
+
+
 	
-	@Override
-	public void courir() {
-		System.out.println("Je m'appelle "+this.getNom()+"et je cours très vite");
-	}
+	
 }

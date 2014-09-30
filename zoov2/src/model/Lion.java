@@ -30,5 +30,7 @@ public class Lion extends Animal {
 		return (ca.calculer(this.getDateNaiss())*1.2)*12;
 		
 	}
+	
+	
 
 }

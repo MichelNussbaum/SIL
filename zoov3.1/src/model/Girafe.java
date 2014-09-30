@@ -12,8 +12,8 @@ public class Girafe extends Animal {
 	}
 
 	public Girafe(String nomAbrege, Date dateNaiss, String sexe, int taille,
-			double poids, double coefficient) {
-		super(nomAbrege, dateNaiss, sexe, taille, poids,coefficient );
+			double poids, double coefficient,Comportement comportement) {
+		super(nomAbrege, dateNaiss, sexe, taille, poids,coefficient ,comportement);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -27,12 +27,6 @@ public class Girafe extends Animal {
 	public double finAlgo() {
 		CalculateurAge ca = CalculateurAge.getInstance();
 		return (this.getTaille()*2)*7;
-	}
-
-	@Override
-	public void courir() {
-		System.out.println("Je m'appelle "+this.getNom()+"et je cours assez vite");
-		
 	}
 
 }

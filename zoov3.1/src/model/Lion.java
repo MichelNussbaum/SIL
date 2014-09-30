@@ -14,8 +14,8 @@ public class Lion extends Animal {
 	}
 
 	public Lion(String nom, Date dateNaiss, String sexe, int taille,
-			double poids, double coefficient) {
-		super(nom, dateNaiss, sexe, taille, poids, coefficient);
+			double poids, double coefficient,Comportement comportement) {
+		super(nom, dateNaiss, sexe, taille, poids, coefficient,comportement);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -30,11 +30,9 @@ public class Lion extends Animal {
 		return (ca.calculer(this.getDateNaiss())*1.2)*12;
 		
 	}
+
 	
-	@Override
-	public void courir() {
-		System.out.println("Je m'appelle "+this.getNom()+"et je cours vite");
-		
-	}
+	
+
 
 }

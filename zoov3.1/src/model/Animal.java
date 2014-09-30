@@ -9,9 +9,10 @@ public abstract class Animal implements Pensionnaires {
 	private int taille;
 	private double poids;
 	private double coeffcient;
+	private Comportement comportement;
 
 	public Animal(String nomAbrege, Date dateNaiss, String sexe, int taille,
-			double poids,double coefficient) {
+			double poids,double coefficient,Comportement comportement) {
 		super();
 		this.nom= nomAbrege;
 		this.dateNaiss = dateNaiss;
@@ -19,13 +20,17 @@ public abstract class Animal implements Pensionnaires {
 		this.taille = taille;
 		this.poids = poids;
 		this.coeffcient = coefficient;
+		this.comportement = comportement;
 	}
 
 	public Animal() {
 		super();
 	}
 	
-	public abstract void courir();
+	public void seMouvoir(){
+		System.out.print("je m'appelle "+this.nom+" et ");
+		comportement.seMouvoir();
+	}
 	
 	public abstract void dormir();
 	
@@ -73,6 +78,14 @@ public abstract class Animal implements Pensionnaires {
 
 	public void setPoids(double poids) {
 		this.poids = poids;
+	}
+
+	public Comportement getComportement() {
+		return comportement;
+	}
+
+	public void setComportement(Comportement comportement) {
+		this.comportement = comportement;
 	}
 	
 	

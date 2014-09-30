@@ -89,7 +89,7 @@ public class Zoo {
 	
 	public void faireCourir(){
 		for (Pensionnaires p : pensionnaires) {
-			p.courir();
+			p.seMouvoir();
 		}
 	}
 	
