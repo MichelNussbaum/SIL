@@ -29,4 +29,10 @@ public class Girafe extends Animal {
 		return (this.getTaille()*2)*7;
 	}
 
+	@Override
+	public String getLibelle() {
+		// TODO Auto-generated method stub
+		return "assez vite";
+	}
+
 }

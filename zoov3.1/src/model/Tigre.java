@@ -28,6 +28,11 @@ public class Tigre extends Animal {
 		return (ca.calculer(this.getDateNaiss())*1.2)*12;
 	}
 
+	@Override
+	public String getLibelle() {
+		return "très vite";
+	}
+
 
 	
 	

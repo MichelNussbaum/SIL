@@ -31,6 +31,11 @@ public class Lion extends Animal {
 		
 	}
 
+	@Override
+	public String getLibelle() {
+		return "vite";
+	}
+
 	
 	
 

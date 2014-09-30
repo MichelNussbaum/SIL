@@ -27,9 +27,11 @@ public abstract class Animal implements Pensionnaires {
 		super();
 	}
 	
+	public abstract String getLibelle();
+	
 	public void seMouvoir(){
 		System.out.print("je m'appelle "+this.nom+" et ");
-		comportement.seMouvoir();
+		comportement.seMouvoir(getLibelle());
 	}
 	
 	public abstract void dormir();
